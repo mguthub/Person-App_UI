@@ -17,7 +17,7 @@ export class PersonInfoComponent implements OnInit {
    
 }
 search(){
-  this.http.get('http://personspringbootapi-env-1.c2vwitvy59.ca-central-1.elasticbeanstalk.com/api/persons?firstName='+ this.firstName).subscribe((response)=>{
+  this.http.get('http://personspringbootapi-env.7e8nmtvgje.us-east-2.elasticbeanstalk.com/api/persons/'+ this.firstName).subscribe((response)=>{
     this.response = response;
     console.log(this.response);
   });
